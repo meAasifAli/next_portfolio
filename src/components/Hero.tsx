@@ -6,14 +6,12 @@ import { FaGithub } from "react-icons/fa6";
 
 const Hero = () => {
 
-
-
     return (
         <section id='hero'>
-            <div className='flex flex-col sm:flex-row gap-8 sm:gap-0 justify-between items-center max-h-screen max-w-full w-full'>
+            <div className='flex flex-col sm:flex-row gap-8 sm:gap-0 justify-between items-center max-h-auto max-w-full w-full'>
                 <div className='flex flex-col justify-start items-start max-w-full sm:max-w-[544px] mt-8 sm:mt-0'>
-                    <h1 className='text-[57px] sm:text-[101px] font-medium leading-[100%] text-white uppercase '>Hi, I am <br /> Aasif Ali</h1>
-                    <p className='text-[18px] font-normal text-[#C7C7C7] leading-[150%] mt-[16px]'>Passionate Web and App Developer creating seamless digital experiences. Specializing in modern web technologies and mobile applications to bring innovative ideas to life., let&apos;s connect!</p>
+                    <h1 className='text-[57px] sm:text-[101px] font-medium leading-[100%] text-white uppercase font-bebasNue'>Hi, I am <br /> Aasif Ali.</h1>
+                    <p className='text-[18px] font-normal text-[#C7C7C7] leading-[150%] mt-[16px] font-manRope'>Passionate Web and App Developer creating seamless digital experiences. Specializing in modern web technologies and mobile applications to bring innovative ideas to life., let&apos;s connect!</p>
                     <div className='flex items-center w-full gap-6 mt-[32px]'>
                         <div className='animated-button flex items-center gap-2'>
                             <p className='uppercase text-[16px]'>Contact</p>
@@ -31,16 +29,16 @@ const Hero = () => {
 
                             </div>
                         </div>
-                        <div className='p-4 bg-[#222222] rounded-full'>
+                        <a href='https://www.linkedin.com/in/meaasifali/' target='_blank' className='p-4 bg-[#222222] rounded-full'>
                             <FaLinkedinIn color='#D3E97A' size={30} />
-                        </div>
-                        <div className='p-4 bg-[#222222] rounded-full'>
+                        </a>
+                        <a href='https://www.github.com/meAasifAli' target='_blank' className='p-4 bg-[#222222] rounded-full'>
                             <FaGithub color='#D3E97A' size={30} />
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div>
-                    <Image src={'/assets/avatar.jpeg'} alt='err' width={400} height={400} className='rounded-2xl z-0' />
+                    <Image src={'/assets/avatar.jpeg'} alt='err' width={500} height={500} className='rounded-2xl z-0' />
                 </div>
             </div>
         </section>

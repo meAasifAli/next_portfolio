@@ -31,10 +31,10 @@ const Navbar = () => {
                     }
                 </div>
                 {
-                    openMenu && <div className='scale-up-center flex flex-col space-y-4 p-8 bg-gradient-to-bl from-black  to-white absolute right-[5%] z-50 rounded-xl'>
+                    openMenu && <div className='scale-up-center flex flex-col space-y-6 p-12 bg-gradient-to-bl from-black  to-white absolute right-[5%] z-50 rounded-xl'>
                         {
                             navLinks.map((navItem, id) => {
-                                return <li key={id} className='text-black  text-[18px] font-medium leading-6 font-playwrite list-none'>
+                                return <li key={id} className='text-black  text-[24px] font-medium leading-6 font-playwrite list-none'>
                                     <a href={navItem.link}>{navItem.name}</a>
                                 </li>
                             })

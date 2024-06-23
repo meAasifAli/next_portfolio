@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'playwrite': ["Playwrite NG Trad", 'cursive']
+        'playwrite': ["Playwrite NG Trad", 'cursive'],
+        'bebasNue': ["Bebas Neue", 'sans-serif'],
+        'manRope': ["Manrope", 'sans-serif']
       }
     },
   },

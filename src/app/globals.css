@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +14,7 @@
 
 body {
   background-color: #0a0a0a;
+  scroll-behavior: smooth;
 }
 
 .animated-button {

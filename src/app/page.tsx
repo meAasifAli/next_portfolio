@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 
 
 export default function Home() {
@@ -10,14 +11,23 @@ export default function Home() {
         <div className="p-4 sm:p-8">
           <Navbar />
         </div>
-        <div className="p-4 sm:p-8">
+        <div id="hero" className="p-4 sm:p-8">
           <Hero />
         </div>
+
         <div className="p-4 sm:p-8">
-          <hr className="w-full" />
+          <hr className="w-full border border-[#484848]" />
+        </div>
+
+        <div id="about" className="p-4 sm:p-8">
+          <About />
         </div>
         <div className="p-4 sm:p-8">
-          <About />
+          <hr className="w-full border border-[#484848]" />
+        </div>
+
+        <div id="work" className="p-4 sm:p-8">
+          <Projects />
         </div>
       </div>
     </main>
