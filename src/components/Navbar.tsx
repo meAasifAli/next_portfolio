@@ -9,8 +9,8 @@ import { MdOutlineClose } from "react-icons/md";
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState<boolean>(false)
     return (
-        <nav className='flex items-center justify-between w-full'>
-            <div>
+        <nav className='flex items-center justify-between w-full '>
+            <div className=''>
                 <h2 className='text-[32px] leading-24 tracking-tighter font-bold text-white font-playwrite uppercase'>Aasif Ali</h2>
             </div>
             <ul className='hidden sm:hidden  md:flex items-center gap-8 relative'>
