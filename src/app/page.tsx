@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -28,6 +29,12 @@ export default function Home() {
 
         <div id="work" className="p-4 sm:p-8">
           <Projects />
+        </div>
+        <div className="p-4 sm:p-8">
+          <hr className="w-full border border-[#484848]" />
+        </div>
+        <div id="contact" className="p-4 sm:p-8">
+          <Contact />
         </div>
       </div>
     </main>

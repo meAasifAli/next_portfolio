@@ -14,9 +14,9 @@ export const projects = [
     {
         id: 2,
         title: "Full Stack Social Media App",
-        DeployURL: "https://next-14-social.vercel.app/profile/Aasif",
-        GitURl: "https://github.com/Asif45uaha/NEXT_14_SOCIAL.git",
-        content: "Full Social Media App Built using Next.js 14 ,Mongodb  and ChakraUI,Users can follow or unfollow other users, Users can add their post to their timeline, Users can edit as well  as delete their own posts and much more",
+        DeployURL: "https://full-stack-social-media-pq4h.onrender.com",
+        GitURl: "https://github.com/meAasifAli/Full_Stack_Social_Media.git",
+        content: "Full Stack Social Media App along with one on one user Conversation functionality built by leveraging the power of MERN stack,Users can follow or unfollow other users, Users can add their post to their timeline, Users can edit as well  as delete their own posts and much more",
         category: "Fullstack",
         thumbnail: "/assets/social.png",
         year: "Feb. 2024"

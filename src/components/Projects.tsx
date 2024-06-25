@@ -33,13 +33,11 @@ const Projects = () => {
                                 </div>
                                 <hr className='w-full border border-[#484848]' />
                                 <div className='flex flex-row w-full items-center justify-center gap-4 py-3'>
-                                    <a href="" className='flex items-center justify-center gap-2 p-3 rounded-full w-full border border-[#D3E97A]'>
+                                    <a href={project.DeployURL} className='animated-button w-full flex items-center justify-center'>
                                         <p className='text-[#D3E97A] sm:text-[18px] text-[16px] font-manRope  font-bold leading-[150%] '>Preview</p>
-                                        <Image src={'/assets/vector2.png'} height={16} width={16} alt='err' />
                                     </a>
-                                    <a href="" className='flex items-center justify-center gap-2 p-3 rounded-full w-full border border-[#D3E97A]'>
+                                    <a href={project.GitURl} target='_blank' className='animated-button w-full flex items-center justify-center'>
                                         <p className='text-[#D3E97A] sm:text-[18px] text-[16px] font-manRope  font-bold leading-[150%] '>Github</p>
-                                        <FaGithub color='#D3E97A' size={24} />
                                     </a>
                                 </div>
                             </div>
