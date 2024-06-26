@@ -1,4 +1,6 @@
-export const navLinks = [
+import { NavProps } from "@/types/nav";
+
+export const navLinks: NavProps[] = [
     {
         id: 1,
         name: "About",
@@ -11,8 +13,8 @@ export const navLinks = [
     },
     {
         id: 3,
-        name: "Services",
-        link: "#services"
+        name: "Testimonials",
+        link: "#testimonials"
     },
     {
         id: 4,

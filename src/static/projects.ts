@@ -1,6 +1,7 @@
+import { ProjectProps } from "@/types/project";
 
 
-export const projects = [
+export const projects: ProjectProps[] = [
     // {
     //     id: 1,
     //     title: "Ecommerce APP",
