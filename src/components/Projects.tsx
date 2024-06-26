@@ -15,7 +15,7 @@ const Projects = () => {
                     projects.map((project, id) => {
                         return <div key={id} className='flex flex-col sm:flex-row items-center w-full gap-[45px]'>
                             <div className='bg-[#1A1A1A] w-full sm:w-1/2 p-8 flex justify-center items-center rounded-3xl'>
-                                <Image src={project!.thumbnail} alt='err' height={200} width={300} className='rounded-3xl' />
+                                <Image src={project!.thumbnail} alt='err' height={200} width={200} className='rounded-3xl' />
                             </div>
                             <div className='w-full sm:w-1/2 flex flex-col justify-start items-start gap-4'>
                                 <h1 className='sm:text-[32px] text-[24px] font-manRope text-white font-medium leading-[140%]'>{project!.title}</h1>

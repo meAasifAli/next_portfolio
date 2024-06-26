@@ -37,8 +37,9 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className=''>
                     <Image src={'/assets/avatar.jpeg'} alt='err' width={500} height={500} className='rounded-2xl z-0' />
+
                 </div>
             </div>
         </section>
