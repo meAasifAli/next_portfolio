@@ -10,11 +10,11 @@ const Hero = () => {
         <section id='hero'>
             <div className='flex flex-col sm:flex-row gap-8 sm:gap-0 justify-between items-center max-h-auto max-w-full w-full'>
                 <div className='flex flex-col justify-start items-start max-w-full sm:max-w-[544px] mt-8 sm:mt-0'>
-                    <h1 className='text-[57px] sm:text-[101px] font-medium leading-[100%] text-white uppercase font-bebasNue'>Hi, I am <br /> Aasif Ali.</h1>
-                    <p className='text-[18px] font-normal text-[#C7C7C7] leading-[150%] mt-[16px] font-manRope'>Passionate Web and App Developer creating seamless digital experiences. Specializing in modern web technologies and mobile applications to bring innovative ideas to life., let&apos;s connect!</p>
+                    <h1 className='text-[57px] sm:text-[101px] font-bold leading-[100%] text-white uppercase font-amenti'>Hi, I am <br /> Aasif Ali.</h1>
+                    <p className='text-[18px] font-regular text-[#C7C7C7] leading-[150%] mt-[16px] font-amenti'>Passionate Web and App Developer crafting seamless digital experiences. Specializing in modern web technologies and mobile applications to bring innovative ideas to life., let&apos;s connect!</p>
                     <div className='flex items-center w-full gap-6 mt-[32px]'>
                         <div className='animated-button flex items-center gap-2'>
-                            <p className='uppercase text-[16px]'>Contact</p>
+                            <p className='uppercase text-[16px] font-regular font-amenti'>Contact</p>
                             <div className='p-1 rounded-full bg-[#222222]'>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_7_370)">
@@ -38,8 +38,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className=''>
-                    <Image src={'/assets/avatar.jpeg'} alt='err' width={500} height={500} className='rounded-2xl z-0' />
-
+                    <Image src={'/assets/avatar.jpeg'} alt='err' width={400} height={400} className='rounded-2xl z-0' />
                 </div>
             </div>
         </section>

@@ -11,7 +11,16 @@ const config: Config = {
       fontFamily: {
         'playwrite': ["Playwrite NG Trad", 'cursive'],
         'bebasNue': ["Bebas Neue", 'sans-serif'],
-        'manRope': ["Manrope", 'sans-serif']
+        'manRope': ["Manrope", 'sans-serif'],
+        'amenti': ['Amenti', 'sans-serif']
+      },
+      fontWeight: {
+        'bold': '700',
+        'medium': '500',
+        'regular': '400',
+        'light': '300',
+
+
       }
     },
   },
