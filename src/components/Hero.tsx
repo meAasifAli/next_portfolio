@@ -29,10 +29,10 @@ const Hero = () => {
 
                             </div>
                         </div>
-                        <a href='https://www.linkedin.com/in/meaasifali/' target='_blank' className='p-4 bg-[#222222] rounded-full'>
+                        <a href='https://www.linkedin.com/in/meaasifali/' target='_blank' className='p-3 bg-[#222222] rounded-full'>
                             <FaLinkedinIn color='#D3E97A' size={30} />
                         </a>
-                        <a href='https://www.github.com/meAasifAli' target='_blank' className='p-4 bg-[#222222] rounded-full'>
+                        <a href='https://www.github.com/meAasifAli' target='_blank' className='p-3 bg-[#222222] rounded-full'>
                             <FaGithub color='#D3E97A' size={30} />
                         </a>
                     </div>
