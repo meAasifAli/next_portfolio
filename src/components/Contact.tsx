@@ -22,21 +22,23 @@ const Contact = () => {
             <form className='w-full sm:w-1/2 mt-6 sm:mt-0 space-y-4 sm:space-y-6'>
                 <div>
                     <label className="text-[16px] font-amenti font-medium text-[#c7c7c7]" htmlFor="name">Name</label>
-                    <input type="text" id="name" placeholder='Your Name' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-full focus:outline-none focus:border-[#c7c7c7]" />
+                    <input type="text" id="name" placeholder='Your Name' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]" />
                 </div>
                 <div>
                     <label className="text-[16px] font-amenti font-medium text-[#c7c7c7]" htmlFor="name">Email</label>
-                    <input type="email" id="email" placeholder='Your Email' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-full focus:outline-none focus:border-[#c7c7c7]" />
+                    <input type="email" id="email" placeholder='Your Email' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]" />
                 </div>
                 <div>
                     <label className="text-[16px] font-amenti font-medium text-[#c7c7c7]" htmlFor="subject">Subject</label>
-                    <input type="text" id="subject" placeholder='Your Email' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-full focus:outline-none focus:border-[#c7c7c7]" />
+                    <input type="text" id="subject" placeholder='Your Email' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]" />
                 </div>
                 <div>
                     <label className="text-[16px] font-amenti font-medium text-[#c7c7c7]" htmlFor="msg">Message</label>
-                    <textarea id="msg" placeholder='Your Message' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-full focus:outline-none focus:border-[#c7c7c7]" ></textarea>
+                    <textarea id="msg" placeholder='Your Message' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]" ></textarea>
                 </div>
-                <button className="font-amenti font-medium animated-button">submit</button>
+
+                <button className="font-amenti font-medium animated-button text-end">submit</button>
+
             </form >
         </div >
     )

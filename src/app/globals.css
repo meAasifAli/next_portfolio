@@ -73,6 +73,40 @@ body {
 .animated-button:hover::before {
   left: 0;
 }
+
+.reverse-animated-button {
+  position: relative;
+  padding: 16px 30px;
+  font-size: 16px;
+  color: black;
+  background-color: black;
+  border: none;
+  border-radius: 35px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.reverse-animated-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d3e97a;
+  transition: left 0.8s;
+  color: black;
+  z-index: -1;
+}
+.reverse-animated-button:hover {
+  color: white;
+}
+
+.reverse-animated-button:hover::before {
+  left: -100%;
+}
+
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
