@@ -37,7 +37,7 @@ const Contact = () => {
                     <textarea id="msg" placeholder='Your Message' className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]" ></textarea>
                 </div>
 
-                <button className="font-amenti font-medium animated-button text-end">submit</button>
+                <button className="font-amenti font-medium reverse-animated-button text-end">submit</button>
 
             </form >
         </div >

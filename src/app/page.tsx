@@ -12,7 +12,7 @@ export default function Home() {
       <div className="animated-gradient1"></div>
       <main className="w-full h-full">
         <div className="w-full max-w-full space-y-6 sm:max-w-screen-xl mx-auto">
-          <div className="p-4 sm:p-8">
+          <div>
             <Navbar />
           </div>
           <div id="hero" className="p-4 sm:p-8">
@@ -39,7 +39,7 @@ export default function Home() {
           <div id="contact" className="p-4 sm:p-8">
             <Contact />
           </div>
-          <div id="contact" className="p-4 sm:p-8">
+          <div>
             <Footer />
           </div>
         </div>
