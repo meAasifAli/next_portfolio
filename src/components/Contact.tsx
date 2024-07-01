@@ -2,7 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 
 const Contact = () => {
     return (
-        <div className='flex flex-col sm:flex-row items-start justify-between '>
+        <div className='flex flex-col sm:flex-row items-start justify-between'>
             <div className='w-full sm:w-1/2 space-y-0'>
                 <h1 className='text-white text-[43px] sm:text-[76px]  font-medium leading-[90%]  font-amenti mb-4 sm:mb-8'>let&apos;s connect</h1>
                 <p className='text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti'>Say Hello at <a className="underline text-white" href="mailto:asif15310@gmail.com">asif@gmail.com</a> </p>

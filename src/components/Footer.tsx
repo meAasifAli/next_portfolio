@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <div className="w-full  h-auto shadow-md bg-gradient-to-bl space-y-4 from-[#d3e97a] to-black p-4 rounded-t-full">
+        <div className="w-full  h-auto shadow-md bg-gradient-to-bl space-y-4 from-[#d3e97a] to-black p-4 rounded-lg">
             <div className="z-0 flex flex-row items-center justify-center  px-4 sm:px-16 gap-4 sm:gap-16 h-full relative">
                 <div className="flex flex-col gap-1 sm:gap-2">
                     <h2 className='text-[16px] sm:text-[24px] leading-24 tracking-widest  text-[#c7c7c7] font-amenti font-medium'>Aasif Ali</h2>
