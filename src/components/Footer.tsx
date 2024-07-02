@@ -1,40 +1,54 @@
 
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
+import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="w-full  h-auto shadow-md bg-gradient-to-bl space-y-4 from-[#d3e97a] to-black p-4 rounded-lg">
-            <div className="z-0 flex flex-row items-center justify-center  px-4 sm:px-16 gap-4 sm:gap-16 h-full relative">
-                <div className="flex flex-col gap-1 sm:gap-2">
-                    <h2 className='text-[16px] sm:text-[24px] leading-24 tracking-widest  text-[#c7c7c7] font-amenti font-medium'>Aasif Ali</h2>
-                    <div className="flex items-center gap-2">
-                        <a href='https://www.linkedin.com/in/meaasifali/' target='_blank' className='p-1 sm:p-2 bg-[#222222] rounded-full'>
-                            <FaLinkedinIn color='#D3E97A' size={20} />
-                        </a>
-                        <a href='https://www.github.com/meAasifAli' target='_blank' className='p-1 sm:p-2 bg-[#222222] rounded-full'>
-                            <FaGithub color='#D3E97A' size={20} />
-                        </a>
-                        <a href='https://www.instagram.com/_asif_ali10' target='_blank' className='p-1 sm:p-2 bg-[#222222] rounded-full'>
-                            <FaInstagram color='#D3E97A' size={20} />
-                        </a>
+        <footer className="bg-gradient-to-r from-[#d3e97a] via-[#222222] to-[#d3e97a] text-black pt-8 pb-4 sm:pt-16 relative">
+            <div className="container mx-auto px-4 w-full max-w-full space-y-6 sm:max-w-screen-xl">
+                <div className="flex flex-col md:flex-row justify-between items-center">
+                    <div className="mb-4 md:mb-0 text-center md:text-left">
+                        <h2 className="text-2xl font-bold font-amenti text-black">Aasif Ali</h2>
+                        <p className="text-black font-amenti font-regular">Web & App Developer</p>
                     </div>
-                </div>
-                <div className="flex flex-col gap-1 sm:gap-2">
-                    <a href="" className='text-[#c7c7c7] underline font-amenti font-medium text-[13px] text-sm'>
-                        Resume
-                    </a>
-                    <a href="mailto:asif15310@gmail.com" className='text-[#c7c7c7] underline font-amenti font-medium text-[13px] text-sm'>
-                        asif@gmail.com
-                    </a>
-                    <p className='text-[#c7c7c7] cursor-pointer font-amenti font-medium text-[13px] text-sm'>
-                        +91, 7889423564
-                    </p>
-                </div>
 
+                    <div className="flex flex-col gap-4 ">
+                        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center md:text-left">
+                            <a href="#about" className="hover:text-gray-300 text-black font-medium font-amenti">About Me</a>
+                            <a href="#contact" className="hover:text-gray-300 text-black font-medium font-amenti">Contact Me</a>
+                            <a href="tel:+91788942564" className="hover:text-gray-300 text-black font-medium font-amenti">+91,7889423564</a>
+                            <a href="resume.pdf" className="hover:text-gray-300 text-black font-medium font-amenti">Resume</a>
+                        </div>
+                        <div className="flex flex-col sm:flex-row items-center gap-2">
+                            <div>
+                                <h2 className="text-sm font-amenti font-regular">Follow me :</h2>
+                            </div>
+                            <div className="flex space-x-4 mb-4 md:mb-0">
+                                <a href="https://www.linkedin.com/in/meAasifAli" target="_blank" className="hover:text-gray-300">
+                                    <FaLinkedinIn size={24} />
+                                </a>
+                                <a href="https://github.com/meAasifAli" target="_blank" className="hover:text-gray-300">
+                                    <FaGithub size={24} />
+                                </a>
+                                <a href="https://instagram.com/_asif_ali10" target="_blank" className="hover:text-gray-300">
+                                    <FaInstagram size={24} />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="mt-4 text-center text-black font-medium text-xs font-amenti">
+                    <p>&copy; {new Date().getFullYear()} Aasif Ali. All rights reserved.</p>
+                </div>
             </div>
-            <hr className="w-full border-[#c7c7c7] " />
-            <p className="text-[#c7c7c7] text-[12px] text-center font-amenti font-regular">Aasif Ali &copy;  All rights reserved</p>
-        </div>
+            <a
+                href="#top"
+                className="absolute right-4 bottom-4 bg-black text-white p-2 rounded-full hover:bg-gray-700 transition duration-300"
+            >
+                <FaArrowUp />
+            </a>
+        </footer>
     )
 }
 export default Footer

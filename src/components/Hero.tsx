@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
@@ -13,7 +14,7 @@ const Hero = () => {
                     <h1 className='text-[57px] sm:text-[101px] font-bold leading-[100%] text-white uppercase font-amenti'>Hi, I am <br /> Aasif Ali.</h1>
                     <p className='text-[18px] font-regular text-[#C7C7C7] leading-[150%] mt-[16px] font-amenti'>Passionate Web and App Developer crafting seamless digital experiences. Specializing in modern web technologies and mobile applications to bring innovative ideas to life., let&apos;s connect!</p>
                     <div className='flex items-center w-full gap-6 mt-[32px]'>
-                        <div className='reverse-animated-button flex items-center gap-2'>
+                        <Link href={'#contact'} className='reverse-animated-button flex items-center gap-2'>
                             <p className='uppercase text-[16px] font-regular font-amenti'>Contact</p>
                             <div className='p-1 rounded-full bg-[#222222]'>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +29,7 @@ const Hero = () => {
                                 </svg>
 
                             </div>
-                        </div>
+                        </Link>
                         <a href='https://www.linkedin.com/in/meaasifali/' target='_blank' className='p-3 bg-[#222222] rounded-full'>
                             <FaLinkedinIn color='#D3E97A' size={30} />
                         </a>

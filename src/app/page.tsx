@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -38,9 +37,6 @@ export default function Home() {
           </div>
           <div id="contact" className="p-4 sm:p-8">
             <Contact />
-          </div>
-          <div>
-            <Footer />
           </div>
         </div>
       </main>

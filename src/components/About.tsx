@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
+
 const About = () => {
     return (
         <div className='flex flex-col justify-center items-center'>
