@@ -5,6 +5,7 @@ import { BsDownload } from "react-icons/bs";
 import '../../app/globals.css'
 import Image from 'next/image';
 import { skills } from '@/static/skills';
+import { Experiences } from '@/static/Experience';
 
 const About = () => {
     return (
@@ -61,6 +62,10 @@ const About = () => {
 
                     </div>
                 </div>
+                <div className="w-full py-4 sm:py-8">
+                    <hr className="w-full border border-[#484848]" />
+                </div>
+
             </div>
             <div className="animated-gradient2"></div>
         </div>
