@@ -12,11 +12,6 @@ export const navLinks: NavProps[] = [
         link: "#work"
     },
     {
-        id: 3,
-        name: "Testimonials",
-        link: "#testimonials"
-    },
-    {
         id: 4,
         name: "Contact",
         link: "#contact"

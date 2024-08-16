@@ -31,7 +31,7 @@ const Navbar = () => {
                     }
                 </div>
                 {
-                    openMenu && <div className='scale-up-center flex flex-col space-y-6 p-12 bg-gradient-to-bl from-[#2af598]  to-[#009efd] absolute right-[5%] z-50 rounded-xl'>
+                    openMenu && <div className='scale-up-center flex flex-col space-y-6 p-12 bg-gradient-to-bl bg-[#ffed] absolute right-[5%] z-50 rounded-xl'>
                         {
                             navLinks.map((navItem, id) => {
                                 return <li key={id} className='text-black  text-[24px] font-amenti leading-6  list-none'>
