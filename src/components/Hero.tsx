@@ -68,7 +68,7 @@ const Hero = () => {
           <Image
             width={1000}
             height={1000}
-            src={"/assets/Aasif.jpg"}
+            src={"/assets/Aasif.JPG"}
             alt="err"
             className="w-[500px] h-[500px] object-contain rounded-lg]"
           />

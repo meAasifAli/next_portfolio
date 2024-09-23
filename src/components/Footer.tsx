@@ -3,7 +3,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-bl from-[#d3e97a]  to-black text-[#c7c7c7] pt-16 pb-4 sm:pt-24 relative h-[500px] flex justify-center items-center">
+    <footer className="bg-gradient-to-bl from-[#d3e97a] rounded-t-2xl  to-black text-[#c7c7c7] pt-16 pb-4 sm:pt-24 relative h-[300px] flex justify-center items-center">
       <div className="container mx-auto px-4 w-full max-w-full space-y-6 sm:max-w-screen-xl">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 text-center md:text-left">
