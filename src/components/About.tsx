@@ -6,7 +6,7 @@ const About = () => {
  
   return (
     <section className="w-full sm:h-auto flex justify-center items-center">
-      <div className="flex flex-col justify-center  items-center space-y-8 sm:space-y-16">
+      <div className="flex flex-col justify-center gap-16 sm:gap-0 items-center space-y-8 sm:space-y-16">
       <div className="flex flex-col sm:flex-row items-start justify-between">
         <div className="w-full sm:w-1/2">
           <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row sm:justify-between w-full space-y-16 sm:space-y-0 py-4 sm:py-16">
+      <div className="flex flex-col  sm:flex-row sm:justify-between w-full space-y-16 sm:space-y-0 py-4 sm:py-16">
         <div className="flex flex-col gap-1 text-center">
           <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%]  font-amenti">
           10+
@@ -56,7 +56,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-start justify-between">
+      <div className="flex flex-col  sm:flex-row items-start justify-between">
         <div className="w-full sm:w-1/2">
           <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
             My Capabilities
@@ -72,15 +72,17 @@ const About = () => {
           <div className="flex flex-wrap justify-center items-center w-full gap-6 mt-[32px] ">
             {skills.map((skill) => {
               return (
-                <div
-                  key={skill.name}
-                  className="px-3 py-2 rounded-lg  cursor-pointer bg-[#222222]  overflow-hidden flex justify-center items-center hover:scale-105 hover:transition-all duration-300 ease-linear"
-                >
-                  {/* <Image src={skill.image} height={60} width={60} alt='err' className='object-cover' /> */}
-                  <p className="font-amenti text-sm text-[#C7C7C7]">
-                    {skill.name}
-                  </p>
-                </div>
+                <div key={skill?.name} className="p-[2px] rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 hover:scale-105 hover:transition-all duration-300 ease-linear">
+  <div
+    
+    className="px-3 py-2 rounded-lg cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center"
+  >
+    {/* <Image src={skill.image} height={60} width={60} alt='err' className='object-cover' /> */}
+    <p className="font-amenti text-sm text-[#C7C7C7]">
+      {skill.name}
+    </p>
+  </div>
+</div>
               );
             })}
           </div>
@@ -93,10 +95,10 @@ const About = () => {
           </h1>
         </div>
         <div className="w-full sm:w-1/2">
-          <div className="flex flex-col justify-center items-center w-full gap-6">
+          <div className="flex flex-col justify-center items-center w-full gap-12 sm:gap-16 ">
             {Experiences.map((exp, id) => {
               return (
-                <div key={id} className="flex flex-col  w-full space-y-2">
+                <div key={id} className="flex flex-col  w-full space-y-4">
                   <div className="flex flex-col sm:flex-row items-center sm:justify-between">
                     <h2 className="text-[24px] font-medium font-amenti text-[#c7c7c7]">
                       {exp.title}
