@@ -7,9 +7,9 @@ import { FaGithub } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" className="w-full sm:h-screen flex justify-center items-center">
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-between items-center max-h-auto max-w-full w-full">
-        <div className="flex flex-col justify-start items-start max-w-full sm:max-w-[544px] mt-8 sm:mt-0">
+        <div className="flex flex-col gap-2 justify-start items-start max-w-full sm:max-w-[544px] mt-8 sm:mt-0">
           <h1 className="text-[57px] sm:text-[101px] font-bold leading-[100%] text-white uppercase font-amenti">
             Hi, I am <br /> Aasif Ali.
           </h1>
@@ -66,11 +66,12 @@ const Hero = () => {
         </div>
         <div className="">
           <Image
+          loading="lazy"
             width={1000}
             height={1000}
             src={"/assets/Aasif.JPG"}
             alt="err"
-            className="w-[500px] h-[500px] object-contain rounded-lg]"
+            className="w-full h-[500px] object-contain rounded-2xl"
           />
         </div>
       </div>

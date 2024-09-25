@@ -1,11 +1,12 @@
 import { Experiences } from "@/static/Experience";
 import { skills } from "@/static/skills";
-import Image from "next/image";
-import React from "react";
+
 
 const About = () => {
+ 
   return (
-    <div className="flex flex-col justify-center items-center space-y-8 sm:space-y-16">
+    <section className="w-full sm:h-auto flex justify-center items-center">
+      <div className="flex flex-col justify-center  items-center space-y-8 sm:space-y-16">
       <div className="flex flex-col sm:flex-row items-start justify-between">
         <div className="w-full sm:w-1/2">
           <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
@@ -32,7 +33,7 @@ const About = () => {
       <div className="flex flex-col sm:flex-row sm:justify-between w-full space-y-16 sm:space-y-0 py-4 sm:py-16">
         <div className="flex flex-col gap-1 text-center">
           <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%]  font-amenti">
-            10+
+          10+
           </h1>
           <p className="text-[#d3e97a] text-[13px] sm:text-[16px] font-amenti font-regular">
             Projects Done
@@ -119,6 +120,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
