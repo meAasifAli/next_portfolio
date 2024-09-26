@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="flex items-center w-full gap-6 mt-[32px]">
             <Link
               href={"#contact"}
-              className="reverse-animated-button flex items-center gap-2"
+              className="bg-[#d3e97a] flex items-center gap-2 p-3 rounded-full"
             >
               <p className="uppercase text-[16px] font-regular font-amenti">
                 Contact

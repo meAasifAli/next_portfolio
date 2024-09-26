@@ -137,7 +137,7 @@ body {
 .animated-gradient1 {
   width: 100px;
   height: 100px;
-  background: linear-gradient(75deg, #87CEEB 30%, #222222 100%);
+  background: linear-gradient(75deg, #c8e02b 30%, #222222 100%);
   border-radius: 50%;
   filter: blur(5px);
   position: fixed;
@@ -149,11 +149,121 @@ body {
 .animated-gradient2 {
   width: 100px;
   height: 100px;
-  background: linear-gradient(75deg, #87CEEB 100%, #222222 30%);
+  background: linear-gradient(75deg, #c8e02b 100%, #222222 30%);
   border-radius: 50%;
   filter: blur(5px);
   position: fixed;
   bottom: 4%;
   right: 6%;
   z-index: -1;
+}
+
+
+#nav a:hover span {
+  width: 100%;
+}
+
+/* test */
+
+.timeline-tree {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
+}
+
+.timeline-left .timeline-content {
+  margin-right: auto; /* Align to the left */
+  text-align: right;
+}
+
+.timeline-right .timeline-content {
+  margin-left: auto; /* Align to the right */
+  text-align: left;
+}
+
+/* Timeline vertical line */
+.timeline-tree::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #6b705c;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Timeline marker (dot) */
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #6b705c;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Timeline content */
+.timeline-content {
+  width: 40%;
+  padding: 20px;
+  background-color: #d3e97a;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out; /* Reduced delay and faster animation */
+}
+
+.timeline-left .timeline-content {
+  transform: translateX(-50px); /* Slide in from the left */
+
+}
+
+.timeline-right .timeline-content {
+  transform: translateX(50px); /* Slide in from the right */
+}
+
+/* Hover effect: Content becomes fully visible and slides into place */
+.timeline-item:hover .timeline-content {
+  opacity: 1;
+  transform: translateX(0); /* No more delay on hover */
+}
+
+/* On page load animation (optional if needed) */
+.timeline-item .timeline-content {
+  opacity: 1;
+  transition-delay: 0s;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-left .timeline-content,
+  .timeline-right .timeline-content {
+    text-align: center;
+    width: 100%;
+  }
+
+  .timeline-marker {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

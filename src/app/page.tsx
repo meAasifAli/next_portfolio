@@ -3,7 +3,6 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -39,6 +38,7 @@ export default function Home() {
           <div id="contact" className="p-4 sm:p-8">
             <Contact />
           </div>
+
         </div>
       </main>
       {

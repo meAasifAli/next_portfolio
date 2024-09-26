@@ -19,8 +19,6 @@ const config: Config = {
         'medium': '500',
         'regular': '400',
         'light': '300',
-
-
       }
     },
   },
