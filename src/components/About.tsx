@@ -1,12 +1,11 @@
 'use client'
 import { Experiences } from '@/static/Experience'
 import { skills } from '@/static/skills'
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 const About = () => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.3 });
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.3 })
   return (
     <section className="w-full sm:h-auto flex justify-center items-center">
       <div className="flex flex-col justify-center gap-16 sm:gap-0 items-center space-y-8 sm:space-y-16">
@@ -15,7 +14,6 @@ const About = () => {
             <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
               About Me
             </h1>
-
           </div>
           <div className="w-full sm:w-1/2">
             <p className="text-[#C7C7C7] text-[16px] leading-[150%]  tracking-[8%] text-start mb-4 font-amenti font-regular">
@@ -104,23 +102,30 @@ const About = () => {
               {Experiences.map((item, index) => (
                 <motion.div
                   ref={ref}
-                  className={`timeline-item ${index % 2 === 0 ? 'timeline-left' : 'timeline-right'}`}
+                  className={`timeline-item ${
+                    index % 2 === 0 ? 'timeline-left' : 'timeline-right'
+                  }`}
                   key={index}
                   initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Initial state offscreen
                   animate={inView ? { opacity: 1, x: 0 } : {}} // Animate when in view
-                  transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+                  transition={{ duration: 0.8, ease: 'easeOut' }} // Smooth transition
                 >
                   <div className="timeline-content space-y-2">
-                    <h2 className='font-amenti font-bold text-2xl '>{item?.title}</h2>
-                    <h3 className='text-lg font-amenti font-medium'>{item.company}</h3>
-                    <p className='text-sm font-amenti font-medium'><strong>Duration:</strong> {item?.duration}</p>
-                    <p className='text-sm font-amenti font-normal'>{item.description}</p>
+                    <h2 className="font-amenti font-bold text-2xl ">
+                      {item?.title}
+                    </h2>
+                    <h3 className="text-lg font-amenti font-medium">
+                      {item.company}
+                    </h3>
+                    <p className="text-sm font-amenti font-medium">
+                      <strong>Duration:</strong> {item?.duration}
+                    </p>
+                    <p className="text-sm font-amenti font-normal">
+                      {item.description}
+                    </p>
                   </div>
-                  {
-                    index !== Experiences.length - 1 && (
-                      <div className="timeline-line"></div>
-                    )
-                  }
+
+                  <div className="timeline-line"></div>
                 </motion.div>
               ))}
             </div>
