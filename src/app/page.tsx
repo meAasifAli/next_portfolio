@@ -5,6 +5,8 @@ import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
 import { useEffect, useState } from 'react'
 import { FaArrowUp } from 'react-icons/fa'
+import AOS from 'aos'
+import 'aos/dist/aos.css' // Import AOS styles
 
 export default function Home() {
   const [showArrow, setShowArrow] = useState(false)
@@ -19,6 +21,12 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+      once: true, // Whether animation should happen only once
+    })
+  }, [])
   return (
     <div className="relative overflow-x-hidden">
       <div className="animated-gradient1"></div>

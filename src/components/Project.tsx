@@ -9,7 +9,17 @@ type project = {
 
 const Project = ({ project }: project) => {
   return (
-    <div className="scale-up-center flex flex-col items-start  w-full  bg-[#1A1A1A] p-4 rounded-2xl max-h-[500px] space-y-4 overflow-hidden shadow-sm  hover:scale-105 transition-all delay-75 ease-linear">
+    <div
+      data-aos="fade-top"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="scale-up-center flex flex-col items-start  w-full  bg-[#1A1A1A] p-4 rounded-2xl max-h-[500px] space-y-4 overflow-hidden shadow-sm  hover:scale-105 transition-all delay-75 ease-linear"
+    >
       <Image src={project.thumbnail} alt="err" height={200} width={400} />
       <h3 className="text-white text-[24px] font-medium font-amenti">
         {project.title}

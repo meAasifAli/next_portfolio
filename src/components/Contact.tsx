@@ -1,26 +1,66 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Contact = () => {
   return (
     <div className="flex flex-col sm:flex-row items-start justify-between mb-8">
       <div className="w-full sm:w-1/2 space-y-0">
-        <h1 className="text-white text-[43px] sm:text-[76px]  font-medium leading-[90%]  font-amenti mb-4 sm:mb-8">
+        <h1
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="text-white text-[43px] sm:text-[76px]  font-medium leading-[90%]  font-amenti mb-4 sm:mb-8"
+        >
           let&apos;s connect
         </h1>
-        <p className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
-          Say Hello at{" "}
+        <p
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti"
+        >
+          Say Hello at{' '}
           <a className="underline text-white" href="mailto:asif15310@gmail.com">
             asif@gmail.com
-          </a>{" "}
+          </a>{' '}
         </p>
-        <p className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
-          For more info check{" "}
+        <p
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti"
+        >
+          For more info check{' '}
           <a className="underline text-white" href="">
-            {" "}
+            {' '}
             my resume
-          </a>{" "}
+          </a>{' '}
         </p>
-        <div className="flex items-center gap-4">
+        <div
+          data-aos="fade-top"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="flex items-center gap-4"
+        >
           <a
             href="https://www.linkedin.com/in/meAasifAli/"
             target="_blank"
@@ -44,7 +84,17 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <form className="w-full sm:w-1/2 mt-6 sm:mt-0 space-y-4 sm:space-y-6">
+      <form
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        className="w-full sm:w-1/2 mt-6 sm:mt-0 space-y-4 sm:space-y-6"
+      >
         <div>
           <label
             className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
@@ -106,6 +156,6 @@ const Contact = () => {
         </button>
       </form>
     </div>
-  );
-};
-export default Contact;
+  )
+}
+export default Contact

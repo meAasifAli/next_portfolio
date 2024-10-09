@@ -1,15 +1,28 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
+'use client'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa6'
 
 const Hero = () => {
   return (
-    <section id="hero" className="w-full sm:h-screen flex justify-center items-center">
+    <section
+      id="hero"
+      className="w-full sm:h-screen flex justify-center items-center"
+    >
       <div className="flex flex-col sm:flex-row-reverse gap-8 sm:gap-0 justify-between items-center max-h-auto max-w-full w-full">
-        <div className="flex flex-col gap-2 justify-start items-start max-w-full sm:max-w-[544px] mt-8 sm:mt-0">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="flex flex-col gap-2 justify-start items-start max-w-full sm:max-w-[544px] mt-8 sm:mt-0"
+        >
           <h1 className="text-[57px] sm:text-[101px] font-bold leading-[100%] text-white uppercase font-amenti">
             Hi, I am <br /> Aasif <span className="text-[#d3e97a]">Ali.</span>
           </h1>
@@ -20,7 +33,7 @@ const Hero = () => {
           </p>
           <div className="flex items-center w-full gap-6 mt-[32px]">
             <Link
-              href={"#contact"}
+              href={'#contact'}
               className="bg-[#d3e97a] flex items-center gap-2 p-3 rounded-full"
             >
               <p className="uppercase text-[16px] font-regular font-amenti">
@@ -64,19 +77,28 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <Image
-          loading="lazy"
+            loading="lazy"
             width={1000}
             height={1000}
-            src={"/assets/bg2.png"}
+            src={'/assets/bg2.png'}
             alt="err"
             className="w-full h-[500px] object-contain rounded-2xl"
           />
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

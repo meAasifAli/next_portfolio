@@ -5,17 +5,36 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 const About = () => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.3 })
   return (
     <section className="w-full sm:h-auto flex justify-center items-center">
       <div className="flex flex-col justify-center gap-16 sm:gap-0 items-center space-y-8 sm:space-y-16">
         <div className="flex flex-col sm:flex-row items-start justify-between">
-          <div className="w-full sm:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="w-full sm:w-1/2"
+          >
             <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
               About Me
             </h1>
           </div>
-          <div className="w-full sm:w-1/2">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="w-full sm:w-1/2"
+          >
             <p className="text-[#C7C7C7] text-[16px] leading-[150%]  tracking-[8%] text-start mb-4 font-amenti font-regular">
               In the realm of web development, my expertise with the MERN stack
               allows me to build dynamic, data-driven websites and applications.
@@ -34,7 +53,17 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col  sm:flex-row sm:justify-between w-full space-y-16 sm:space-y-0 py-4 sm:py-16">
-          <div className="flex flex-col gap-1 text-center">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="flex flex-col gap-1 text-center"
+          >
             <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%]  font-amenti">
               10+
             </h1>
@@ -42,7 +71,17 @@ const About = () => {
               Projects Done
             </p>
           </div>
-          <div className="flex flex-col gap-1 text-center">
+          <div
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="flex flex-col gap-1 text-center"
+          >
             <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%]  font-amenti">
               5+
             </h1>
@@ -50,7 +89,17 @@ const About = () => {
               Satisified Clients
             </p>
           </div>
-          <div className="flex flex-col gap-1 text-center">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="flex flex-col gap-1 text-center"
+          >
             <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%]  font-amenti">
               3+
             </h1>
@@ -60,13 +109,33 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col  sm:flex-row items-start justify-between">
-          <div className="w-full sm:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="w-full sm:w-1/2"
+          >
             <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
               My Capabilities
             </h1>
           </div>
           <div className="w-full sm:w-1/2">
-            <p className="text-[#C7C7C7] text-[16px] leading-[150%]  tracking-[8%] text-start mb-4 font-amenti font-regular">
+            <p
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+              className="text-[#C7C7C7] text-[16px] leading-[150%]  tracking-[8%] text-start mb-4 font-amenti font-regular"
+            >
               I am always looking for new challenges and opportunities to expand
               my skills and knowledge. From the past 2 years, I have worked on a
               variety of projects, including web applications, mobile
@@ -76,6 +145,14 @@ const About = () => {
               {skills.map((skill) => {
                 return (
                   <div
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
                     key={skill?.name}
                     className="p-[2px] rounded-lg bg-gradient-to-r from-gray-300 via-[#d3e97a] to-yellow-500 hover:scale-105 hover:transition-all duration-300 ease-linear"
                   >
@@ -92,7 +169,17 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col items-start justify-between">
-          <div className="w-full sm:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="w-full sm:w-1/2"
+          >
             <h1 className="text-white text-[43px] sm:text-[76px] text-center sm:text-start font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
               My Experience
             </h1>
@@ -100,15 +187,22 @@ const About = () => {
           <div className="w-full">
             <div className="timeline-tree my-8">
               {Experiences.map((item, index) => (
-                <motion.div
-                  ref={ref}
+                <div
+                  data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
                   className={`timeline-item ${
                     index % 2 === 0 ? 'timeline-left' : 'timeline-right'
                   }`}
                   key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Initial state offscreen
-                  animate={inView ? { opacity: 1, x: 0 } : {}} // Animate when in view
-                  transition={{ duration: 0.8, ease: 'easeOut' }} // Smooth transition
+                  // initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Initial state offscreen
+                  // animate={inView ? { opacity: 1, x: 0 } : {}} // Animate when in view
+                  // transition={{ duration: 0.8, ease: 'easeOut' }} // Smooth transition
                 >
                   <div className="timeline-content space-y-2">
                     <h2 className="font-amenti font-bold text-2xl ">
@@ -126,7 +220,7 @@ const About = () => {
                   </div>
 
                   <div className="timeline-line"></div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
