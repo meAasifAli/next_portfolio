@@ -1,28 +1,34 @@
+import Image from 'next/image'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <div className="flex flex-col bg-[#9b42f5] sm:flex-row items-start justify-between mb-8 p-4 sm:p-8 rounded-xl">
-      <div className="w-full sm:w-1/2 space-y-0 ">
-        <h1 className="text-white text-[43px] sm:text-[76px]  font-medium leading-[90%]  font-amenti mb-4 sm:mb-8">
+    <div className="relative flex flex-col bg-gradient-to-bl from-[#9b42f5] to-[#7734eb] sm:flex-row items-stretch justify-between mb-8 rounded-xl">
+      <div className="absolute inset-0 bg-black/10 rounded-xl pointer-events-none z-50"></div>
+      {/* White background for content */}
+      <div className="relative flex flex-col w-full sm:w-1/2 bg-white p-8 rounded-l-xl z-10 flex-1">
+        <h1 className="text-[#7734eb] text-[43px] sm:text-[76px] font-medium leading-[90%] font-amenti mb-4 sm:mb-8">
           let&apos;s connect
         </h1>
-        <p className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
+        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
           Say Hello at{' '}
-          <a className="underline text-white" href="mailto:asif15310@gmail.com">
+          <a
+            className="underline text-[#7734eb]"
+            href="mailto:asif15310@gmail.com"
+          >
             asif@gmail.com
-          </a>{' '}
+          </a>
         </p>
-        <p className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
+        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
           For more info check{' '}
           <a
-            className="underline text-white"
+            className="underline text-[#7734eb]"
             href="https://drive.google.com/file/d/10dr-uBLLsG7L8gxcFs_OjsZ18PsQmoY8/view?usp=drive_link"
             target={'_blank'}
           >
             {' '}
             my resume
-          </a>{' '}
+          </a>
         </p>
         <div className="flex items-center gap-4 my-4">
           <a
@@ -30,25 +36,35 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin color="#fff" size={25} />
+            <FaLinkedin color="#7734eb" size={25} />
           </a>
           <a
             href="https://www.instagram.com/_asif_ali10"
             target="_blank"
             rel="noreferrer"
           >
-            <FaInstagram color="#fff" size={25} />
+            <FaInstagram color="#7734eb" size={25} />
           </a>
           <a
             href="https://www.github.com/meAasifAli"
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithub color="#fff" size={25} />
+            <FaGithub color="#7734eb" size={25} />
           </a>
         </div>
+        <div className="flex justify-center items-center">
+          <Image
+            src={'/assets/contact.webp'}
+            height={1000}
+            width={1000}
+            alt="err"
+            className="h-[200px] w-[400px] object-contain"
+          />
+        </div>
       </div>
-      <form className="w-full sm:w-1/2 mt-6 sm:mt-0 space-y-4 sm:space-y-6">
+      {/* Form */}
+      <form className="relative w-full sm:w-1/2 p-8 space-y-4 sm:space-y-6 z-10 flex-1">
         <div>
           <label
             className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
@@ -60,13 +76,13 @@ const Contact = () => {
             type="text"
             id="name"
             placeholder="Your Name"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]"
+            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
           />
         </div>
         <div>
           <label
             className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
-            htmlFor="name"
+            htmlFor="email"
           >
             Email
           </label>
@@ -74,7 +90,7 @@ const Contact = () => {
             type="email"
             id="email"
             placeholder="Your Email"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]"
+            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
           />
         </div>
         <div>
@@ -87,8 +103,8 @@ const Contact = () => {
           <input
             type="text"
             id="subject"
-            placeholder="Your Email"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]"
+            placeholder="Subject"
+            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
           />
         </div>
         <div>
@@ -101,11 +117,11 @@ const Contact = () => {
           <textarea
             id="msg"
             placeholder="Your Message"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#c7c7c7]  bg-[#1A1A1A] rounded-md focus:outline-none focus:border-[#c7c7c7]"
+            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
           ></textarea>
         </div>
 
-        <button className="font-amenti font-medium bg-white p-4 rounded-full text-end">
+        <button className="font-amenti font-medium bg-white text-black px-6 py-3 rounded-full">
           submit
         </button>
       </form>

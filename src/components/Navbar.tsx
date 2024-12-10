@@ -31,7 +31,7 @@ const Navbar = () => {
         })}
       </ul>
 
-      <button className="hidden sm:flex border-[1px] border-[#fff] p-3 rounded-lg">
+      <button className="hidden sm:flex border-[1px] border-[#9b42f5] p-3 rounded-lg">
         <a
           className="text-white"
           href="https://drive.google.com/file/d/10dr-uBLLsG7L8gxcFs_OjsZ18PsQmoY8/view?usp=drive_link"
