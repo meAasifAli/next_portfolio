@@ -27,8 +27,8 @@ const About = () => {
               About Me
             </h1>
           </div>
-          <div className="w-full mt-8">
-            <p className="text-[#C7C7C7] sm:w-2/3 mx-auto text-[16px] leading-6  tracking-widest text-center mb-4 font-amenti ">
+          <div className="w-full sm:mt-8">
+            <p className="text-[#C7C7C7] sm:w-2/3 mx-auto text-[16px] leading-6  tracking-widest text-center font-amenti ">
               I specialize in building dynamic web and mobile applications using
               the MERN stack and React Native. From intuitive front-end designs
               to robust back-end solutions, I deliver high-quality, user-centric
@@ -40,7 +40,7 @@ const About = () => {
         {/* skills */}
         <div className="flex flex-col mt-0 sm:mt-8  justify-center">
           <div className="w-full ">
-            <div className="flex flex-wrap justify-center items-center  gap-6 mt-[32px] w-[90%] mx-auto">
+            <div className="flex flex-wrap justify-center items-center  gap-6  w-[90%] mx-auto">
               <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
                 <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
                   <FaHtml5 size={50} color="#fff" />

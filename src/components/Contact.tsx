@@ -6,11 +6,11 @@ const Contact = () => {
     <div className="relative flex flex-col bg-gradient-to-bl from-[#9b42f5] to-[#7734eb] sm:flex-row items-stretch justify-between mb-8 rounded-xl">
       <div className="absolute inset-0 bg-black/10 rounded-xl pointer-events-none z-50"></div>
       {/* White background for content */}
-      <div className="relative flex flex-col w-full sm:w-1/2 bg-white p-8 rounded-l-xl z-10 flex-1">
-        <h1 className="text-[#7734eb] text-[43px] sm:text-[76px] font-medium leading-[90%] font-amenti mb-4 sm:mb-8">
+      <div className="relative flex flex-col w-full sm:w-1/2 bg-white p-8 rounded-t-xl sm:rounded-l-xl z-10 flex-1">
+        <h1 className="text-[#7734eb] text-[43px] sm:text-[76px] font-medium leading-[90%] font-amenti sm:mb-8">
           let&apos;s connect
         </h1>
-        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
+        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] sm:mb-0 font-amenti">
           Say Hello at{' '}
           <a
             className="underline text-[#7734eb]"
@@ -19,7 +19,7 @@ const Contact = () => {
             asif@gmail.com
           </a>
         </p>
-        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
+        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%]  font-amenti">
           For more info check{' '}
           <a
             className="underline text-[#7734eb]"
@@ -30,7 +30,7 @@ const Contact = () => {
             my resume
           </a>
         </p>
-        <div className="flex items-center gap-4 my-4">
+        <div className="flex items-center gap-4 my-2 sm:my-4">
           <a
             href="https://www.linkedin.com/in/meAasifAli/"
             target="_blank"
