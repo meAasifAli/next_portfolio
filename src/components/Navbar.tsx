@@ -24,12 +24,22 @@ const Navbar = () => {
             >
               <a href={navItem.link} className="relative">
                 {navItem.name}
-                <span className="absolute bottom-[-8px] left-0 h-[4px] w-0 bg-[#d3e97a] transition-all duration-300 ease-in-out"></span>
+                <span className="absolute bottom-[-8px] left-0 h-[4px] w-0 bg-[#9b42f5] transition-all duration-300 ease-in-out"></span>
               </a>
             </li>
           )
         })}
       </ul>
+
+      <button className="hidden sm:flex border-[1px] border-[#fff] p-3 rounded-lg">
+        <a
+          className="text-white"
+          href="https://drive.google.com/file/d/10dr-uBLLsG7L8gxcFs_OjsZ18PsQmoY8/view?usp=drive_link"
+        >
+          check Resume
+        </a>
+      </button>
+
       <div className="block sm:block md:hidden">
         <div>
           {openMenu ? (

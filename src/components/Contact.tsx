@@ -2,99 +2,53 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-start justify-between mb-8">
-      <div className="w-full sm:w-1/2 space-y-0">
-        <h1
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-          className="text-white text-[43px] sm:text-[76px]  font-medium leading-[90%]  font-amenti mb-4 sm:mb-8"
-        >
+    <div className="flex flex-col bg-[#9b42f5] sm:flex-row items-start justify-between mb-8 p-4 sm:p-8 rounded-xl">
+      <div className="w-full sm:w-1/2 space-y-0 ">
+        <h1 className="text-white text-[43px] sm:text-[76px]  font-medium leading-[90%]  font-amenti mb-4 sm:mb-8">
           let&apos;s connect
         </h1>
-        <p
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-          className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti"
-        >
+        <p className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
           Say Hello at{' '}
           <a className="underline text-white" href="mailto:asif15310@gmail.com">
             asif@gmail.com
           </a>{' '}
         </p>
-        <p
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-          className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti"
-        >
+        <p className="text-[#c7c7c7] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] mb-8 sm:mb-0 font-amenti">
           For more info check{' '}
-          <a className="underline text-white" href="">
+          <a
+            className="underline text-white"
+            href="https://drive.google.com/file/d/10dr-uBLLsG7L8gxcFs_OjsZ18PsQmoY8/view?usp=drive_link"
+            target={'_blank'}
+          >
             {' '}
             my resume
           </a>{' '}
         </p>
-        <div
-          data-aos="fade-top"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-          className="flex items-center gap-4"
-        >
+        <div className="flex items-center gap-4 my-4">
           <a
             href="https://www.linkedin.com/in/meAasifAli/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin color="#d3e97a" size={25} />
+            <FaLinkedin color="#fff" size={25} />
           </a>
           <a
             href="https://www.instagram.com/_asif_ali10"
             target="_blank"
             rel="noreferrer"
           >
-            <FaInstagram color="#d3e97a" size={25} />
+            <FaInstagram color="#fff" size={25} />
           </a>
           <a
             href="https://www.github.com/meAasifAli"
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithub color="#d3e97a" size={25} />
+            <FaGithub color="#fff" size={25} />
           </a>
         </div>
       </div>
-      <form
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        className="w-full sm:w-1/2 mt-6 sm:mt-0 space-y-4 sm:space-y-6"
-      >
+      <form className="w-full sm:w-1/2 mt-6 sm:mt-0 space-y-4 sm:space-y-6">
         <div>
           <label
             className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
@@ -151,7 +105,7 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button className="font-amenti font-medium reverse-animated-button text-end">
+        <button className="font-amenti font-medium bg-white p-4 rounded-full text-end">
           submit
         </button>
       </form>

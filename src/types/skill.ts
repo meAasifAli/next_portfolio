@@ -1,4 +1,4 @@
 export type Skillprops = {
-    image: string;
     name: string;
+    icon: JSX.Element
 }

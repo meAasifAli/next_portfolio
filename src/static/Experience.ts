@@ -1,5 +1,6 @@
 import { ExperienceProps } from "@/types/Experience";
 
+
 export const Experiences: ExperienceProps[] = [
     {
         id: 1,
@@ -8,7 +9,8 @@ export const Experiences: ExperienceProps[] = [
         duration: "1 May 2024 - 30 June 2024",
         description: "I worked as a frontend developer at Aharbal, I was responsible for developing and maintaining the frontend of the SabeelConnect(A platform for Fostering mental and spiritual health) platform, using React and Typescript. I also worked on improving the user experience and performance of the platform.",
         comnpanyWebsite: "https://aharbal.in",
-        credential: ""
+        credential: "",
+
     },
     {
         id: 2,
@@ -21,11 +23,11 @@ export const Experiences: ExperienceProps[] = [
     },
     {
         id: 3,
-        title: "Web Developer",
-        company: "BareeqLLC",
-        duration: "10 Jun 2024 - Present",
-        description: "I am working as a Web Developer at BareeqLLC, I am working alongside other developers to deliver state-of-art,Scalable websites by leveraging the latest technologies and best practices. ",
-        comnpanyWebsite: "https://bareeqllc.com",
+        title: "Cross-Platform Mobile App Developer",
+        company: "Raybit Technologies",
+        duration: "17 Sep. - Present",
+        description: "I am working as a React Native Mobile App Developer at Raybit Technologies, I am currently working on a FOOD DELIVERY APP and Delivery Partner App by utilizing the power of React Native. I have gained live experience in working with Raybit Technologies and have been able to contribute to the development of the app",
+        comnpanyWebsite: "",
         credential: ""
     }
 ]
