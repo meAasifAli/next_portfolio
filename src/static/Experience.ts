@@ -23,9 +23,9 @@ export const Experiences: ExperienceProps[] = [
     },
     {
         id: 3,
-        title: "Cross-Platform Mobile App Developer",
+        title: "Mobile App Developer",
         company: "Raybit Technologies",
-        duration: "17 Sep. - Present",
+        duration: "17 Sep. 2024 - Present",
         description: "I am working as a React Native Mobile App Developer at Raybit Technologies, I am currently working on a FOOD DELIVERY APP and Delivery Partner App by utilizing the power of React Native. I have gained live experience in working with Raybit Technologies and have been able to contribute to the development of the app",
         comnpanyWebsite: "",
         credential: ""

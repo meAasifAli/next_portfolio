@@ -4,6 +4,7 @@ import { CiCalendar } from 'react-icons/ci'
 import {
   FaCss3,
   FaDocker,
+  FaFigma,
   FaGithub,
   FaHtml5,
   FaJava,
@@ -16,6 +17,7 @@ import { TbBrandReactNative } from 'react-icons/tb'
 import { DiMongodb, DiMysql } from 'react-icons/di'
 import { RiTailwindCssFill } from 'react-icons/ri'
 import { RiNextjsFill } from 'react-icons/ri'
+import Skill from './Skill'
 
 const About = () => {
   return (
@@ -40,81 +42,26 @@ const About = () => {
         {/* skills */}
         <div className="flex flex-col mt-0 sm:mt-8  justify-center">
           <div className="w-full ">
-            <div className="flex flex-wrap justify-center items-center  gap-6  w-[90%] mx-auto">
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaHtml5 size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaCss3 size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaJs size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaGithub size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaReact size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <RiNextjsFill size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <TbBrandReactNative size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaJava size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaPython size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <DiMongodb size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <DiMysql size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaDocker size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <FaNodeJs size={50} color="#fff" />
-                </div>
-              </div>
-              <div className="p-[2px] rounded-full shadow-sm shadow-[#9b42f5] hover:scale-105 hover:transition-all duration-300 ease-linear">
-                <div className="p-4 rounded-full cursor-pointer bg-[#222222] overflow-hidden flex justify-center items-center">
-                  <RiTailwindCssFill size={50} color="#fff" />
-                </div>
-              </div>
+            <div className="flex flex-wrap justify-center items-center  gap-6 w-full sm:w-[90%] mx-auto">
+              <Skill icon={<FaHtml5 size={50} color="#fff" />} />
+              <Skill icon={<FaCss3 size={50} color="#fff" />} />
+              <Skill icon={<FaJs size={50} color="#fff" />} />
+              <Skill icon={<FaGithub size={50} color="#fff" />} />
+              <Skill icon={<FaReact size={50} color="#fff" />} />
+              <Skill icon={<RiNextjsFill size={50} color="#fff" />} />
+              <Skill icon={<RiTailwindCssFill size={50} color="#fff" />} />
+              <Skill icon={<FaNodeJs size={50} color="#fff" />} />
+              <Skill icon={<DiMysql size={50} color="#fff" />} />
+              <Skill icon={<FaDocker size={50} color="#fff" />} />
+              <Skill icon={<TbBrandReactNative size={50} color="#fff" />} />
+              <Skill icon={<DiMongodb size={50} color="#fff" />} />
+              <Skill icon={<FaJava size={50} color="#fff" />} />
+              <Skill icon={<FaPython size={50} color="#fff" />} />
+              <Skill icon={<FaDocker size={50} color="#fff" />} />
+              <Skill icon={<FaFigma size={50} color="#fff" />} />
             </div>
           </div>
         </div>
-        {/* experience */}
       </div>
     </section>
   )

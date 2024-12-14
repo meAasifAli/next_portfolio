@@ -12,6 +12,11 @@ export const navLinks: NavProps[] = [
         link: "#work"
     },
     {
+        id: 3,
+        name: "Experience",
+        link: "#experience"
+    },
+    {
         id: 4,
         name: "Contact",
         link: "#contact"

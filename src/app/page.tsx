@@ -3,7 +3,7 @@ import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { FaArrowUp } from 'react-icons/fa'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import {
@@ -14,6 +14,7 @@ import {
 } from '@tsparticles/engine'
 
 import { loadSlim } from '@tsparticles/slim'
+import Experience from '@/components/Experience'
 
 export default function Home() {
   const [showArrow, setShowArrow] = useState(false)
@@ -113,6 +114,9 @@ export default function Home() {
           </div>
           <div id="about" className="p-4 sm:p-8">
             <About />
+          </div>
+          <div id="experience" className="p-4 sm:p-8">
+            <Experience />
           </div>
           <div id="work" className="p-4 sm:p-8">
             <Projects />
