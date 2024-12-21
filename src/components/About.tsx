@@ -18,12 +18,19 @@ import { DiMongodb, DiMysql } from 'react-icons/di'
 import { RiTailwindCssFill } from 'react-icons/ri'
 import { RiNextjsFill } from 'react-icons/ri'
 import Skill from './Skill'
+import * as motion from 'motion/react-client'
 
 const About = () => {
   return (
     <section className="w-full sm:h-auto flex justify-center items-center">
       <div className="flex flex-col justify-center gap-16 sm:gap-0 items-center space-y-8 sm:space-y-16">
-        <div className="flex flex-col  justify-center">
+        <motion.div
+          initial={{ x: '-100%' }}
+          whileInView={{ x: '0%' }}
+          viewport={{ once: false }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          className="flex flex-col  justify-center"
+        >
           <div className="w-full relative">
             <h1 className="text-white text-[43px] sm:text-[76px] text-center  font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
               About Me
@@ -37,7 +44,7 @@ const About = () => {
               experiences.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* skills */}
         <div className="flex flex-col mt-0 sm:mt-8  justify-center">

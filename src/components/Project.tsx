@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaGithub } from 'react-icons/fa'
 import { MdOutlinePreview } from 'react-icons/md'
+import * as motion from 'motion/react-client'
 
 type project = {
   project: ProjectProps
@@ -11,8 +12,12 @@ type project = {
 
 const Project = ({ project }: project) => {
   return (
-    <div className="flex flex-col sm:flex-row gap-4  items-center justify-between w-full  bg-[#1A1A1A] p-4 rounded-2xl ">
-      <div>
+    <motion.div
+      initial={{ translateY: 0 }}
+      whileHover={{ translateY: -20 }}
+      className="flex flex-col lg:flex-row gap-4  items-center justify-between w-full  bg-[#1A1A1A] p-4 rounded-2xl "
+    >
+      <motion.div initial={{ translateY: 0 }} whileHover={{ translateY: -40 }}>
         <Image
           src={project.thumbnail}
           alt="err"
@@ -20,8 +25,12 @@ const Project = ({ project }: project) => {
           width={1000}
           className="w-full h-[200px] object-cover rounded-2xl"
         />
-      </div>
-      <div className="ml-4">
+      </motion.div>
+      <motion.div
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        className="ml-4"
+      >
         <h3 className="text-white text-[24px] font-medium font-amenti">
           {project.title}
         </h3>
@@ -48,8 +57,8 @@ const Project = ({ project }: project) => {
             </Link>
           </button>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
 export default Project

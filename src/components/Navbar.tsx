@@ -35,6 +35,7 @@ const Navbar = () => {
         <a
           className="text-white"
           href="https://drive.google.com/file/d/10dr-uBLLsG7L8gxcFs_OjsZ18PsQmoY8/view?usp=drive_link"
+          target="_blank"
         >
           check Resume
         </a>

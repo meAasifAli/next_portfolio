@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr />
+        {/* <hr /> */}
         <div className="mt-4 text-center text-[#c7c7c7] font-medium text-xs font-amenti">
           <p>
             &copy; {new Date().getFullYear()} Aasif Ali. All rights reserved.

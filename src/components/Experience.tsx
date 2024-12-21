@@ -1,11 +1,18 @@
 import { Experiences } from '@/static/Experience'
 import React from 'react'
+import * as motion from 'motion/react-client'
 
 const Experience = () => {
   return (
     <section className="w-full sm:h-auto flex justify-center items-center">
       <div className="flex flex-col justify-center gap-16 sm:gap-0 items-center space-y-8 sm:space-y-16">
-        <div className="flex flex-col  justify-center">
+        <motion.div
+          initial={{ x: '100%' }} // Start from off-screen to the left
+          whileInView={{ x: '0%' }} // Move to the original position
+          viewport={{ once: false }}
+          transition={{ duration: 1.5, ease: 'easeInOut', delay: 1 }}
+          className="flex flex-col  justify-center"
+        >
           <div className="w-full relative">
             <h1 className="text-white text-[43px] sm:text-[76px] text-center  font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
               My Experience
@@ -20,25 +27,34 @@ const Experience = () => {
               Git and Containerization using Docker.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Experiences*/}
         <div className="flex flex-col mt-0 sm:mt-8  justify-center">
           <div className="w-full ">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               {Experiences.map((item, id) => (
-                <div
+                <motion.div
+                  initial={{ x: id % 2 === 0 ? '100%' : '-100%' }}
+                  whileInView={{ x: '0%' }}
+                  whileHover={{
+                    translateY: -10,
+                    scale: 1.02,
+                    transition: { duration: 0.4, ease: 'easeInOut' },
+                  }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.4, ease: 'easeInOut', delay: 0.2 }}
                   key={id}
-                  className="flex flex-col items-center  shadow-md shadow-[#9b42f5]  rounded-xl hover:scale-105 transition-all duration-300 ease-in-out"
+                  className="flex flex-col items-center  shadow-md shadow-[#9b42f5]  rounded-2xl"
                 >
                   <h3 className="text-white font-amenti font-bold text-center w-full sm:text-sm text-xl p-2 sm:p-4">
                     {item?.title}- <span>{` (${item?.duration})`}</span>
                   </h3>
-                  <div className="h-[0.5px] w-full bg-[#9b42f5] my-2 sm:my-4" />
+                  {/* <div className="h-[0.5px] w-full bg-[#9b42f5] my-2 sm:my-4" /> */}
                   <p className="text-[#ccc] font-amenti font-regular text-center w-full sm:text-sm text-xs p-2 sm:p-4  leading-6 tracking-wider">
                     {item?.description}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

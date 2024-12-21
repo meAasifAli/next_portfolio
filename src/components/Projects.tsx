@@ -1,10 +1,16 @@
 import { projects } from '@/static/projects'
 import React from 'react'
 import Project from './Project'
+import * as motion from 'motion/react-client'
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-end items-center w-full">
+    <motion.div
+      initial={{ x: '-100%' }}
+      whileInView={{ x: '0%' }}
+      transition={{ duration: 1.3, delay: 0.4, ease: 'easeInOut' }}
+      className="flex flex-col justify-end items-center w-full"
+    >
       <div className="flex flex-col justify-center items-center w-full">
         <h1 className="text-white font-amenti text-[43px]  sm:text-[76px] leading-[100%] font-medium">
           My work
@@ -22,7 +28,7 @@ const Projects = () => {
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

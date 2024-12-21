@@ -1,12 +1,18 @@
 import Image from 'next/image'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import * as motion from 'motion/react-client'
 
 const Contact = () => {
   return (
     <div className="relative flex flex-col bg-gradient-to-bl from-[#9b42f5] to-[#7734eb] sm:flex-row items-stretch justify-between mb-8 rounded-xl">
       <div className="absolute inset-0 bg-black/10 rounded-xl pointer-events-none z-50"></div>
       {/* White background for content */}
-      <div className="relative flex flex-col w-full sm:w-1/2 bg-white p-8 rounded-t-xl sm:rounded-l-xl z-10 flex-1">
+      <motion.div
+        initial={{ x: '-100%' }}
+        whileInView={{ x: '0' }}
+        transition={{ duration: 1.2, ease: 'easeInOut' }}
+        className="relative flex flex-col w-full lg:w-1/2 bg-white p-8 rounded-t-xl sm:rounded-l-xl z-10 flex-1"
+      >
         <h1 className="text-[#7734eb] text-[43px] sm:text-[76px] font-medium leading-[90%] font-amenti sm:mb-8">
           let&apos;s connect
         </h1>
@@ -62,69 +68,84 @@ const Contact = () => {
             className="h-[200px] w-[400px] object-contain"
           />
         </div>
-      </div>
+      </motion.div>
       {/* Form */}
-      <form className="relative w-full sm:w-1/2 p-8 space-y-4 sm:space-y-6 z-10 flex-1">
-        <div>
-          <label
-            className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
-            htmlFor="name"
-          >
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Your Name"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
-          />
-        </div>
-        <div>
-          <label
-            className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Your Email"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
-          />
-        </div>
-        <div>
-          <label
-            className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
-            htmlFor="subject"
-          >
-            Subject
-          </label>
-          <input
-            type="text"
-            id="subject"
-            placeholder="Subject"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
-          />
-        </div>
-        <div>
-          <label
-            className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
-            htmlFor="msg"
-          >
-            Message
-          </label>
-          <textarea
-            id="msg"
-            placeholder="Your Message"
-            className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
-          ></textarea>
-        </div>
+      <motion.div
+        className="relative w-full sm:w-1/2 p-8 space-y-4 sm:space-y-6 z-10 flex-1"
+        initial={{ x: '100%' }}
+        whileInView={{ x: '0' }}
+        transition={{ duration: 1.2, ease: 'easeInOut' }}
+      >
+        <form
+          method="POST"
+          action={'https://formspree.io/f/mvgojory'}
+          className="relative w-full p-8 space-y-4 sm:space-y-6 z-10 flex-1"
+        >
+          <div>
+            <label
+              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              htmlFor="name"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+            />
+          </div>
+          <div>
+            <label
+              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              htmlFor="email"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+            />
+          </div>
+          <div>
+            <label
+              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              htmlFor="subject"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+            />
+          </div>
+          <div>
+            <label
+              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              htmlFor="msg"
+            >
+              Message
+            </label>
+            <textarea
+              id="msg"
+              name="msg"
+              placeholder="Your Message"
+              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+            ></textarea>
+          </div>
 
-        <button className="font-amenti font-medium bg-white text-black px-6 py-3 rounded-full">
-          submit
-        </button>
-      </form>
+          <button className="font-amenti font-medium bg-white text-black px-6 py-3 rounded-full">
+            submit
+          </button>
+        </form>
+      </motion.div>
     </div>
   )
 }
