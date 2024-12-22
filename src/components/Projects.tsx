@@ -12,10 +12,10 @@ const Projects = () => {
       className="flex flex-col justify-end items-center w-full"
     >
       <div className="flex flex-col justify-center items-center w-full">
-        <h1 className="text-white font-amenti text-[43px]  sm:text-[76px] leading-[100%] font-medium">
+        <h1 className="text-white font-amenti text-[43px]  sm:text-[57px] leading-[100%] font-medium">
           My work
         </h1>
-        <span className="text-wrap font-amenti text-center text-[16px] text-[#C7C7C7] leading-[160%] sm:leading-[150%] tracking-wider py-2 font-regular">
+        <span className="text-wrap text-center text-xs text-[#C7C7C7] leading-2 tracking-wider py-2 font-playwrite">
           Here are some of my selected projects <br /> that exhibit my passion
           as a Web and App developer
         </span>

@@ -16,7 +16,7 @@ const Contact = () => {
         <h1 className="text-[#7734eb] text-[43px] sm:text-[76px] font-medium leading-[90%] font-amenti sm:mb-8">
           let&apos;s connect
         </h1>
-        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] sm:mb-0 font-amenti">
+        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%] sm:mb-0 font-playwrite">
           Say Hello at{' '}
           <a
             className="underline text-[#7734eb]"
@@ -25,7 +25,7 @@ const Contact = () => {
             asif@gmail.com
           </a>
         </p>
-        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%]  font-amenti">
+        <p className="text-[#555555] text-[16px] sm:text-[18px] text-start font-regular leading-[160%]  font-playwrite">
           For more info check{' '}
           <a
             className="underline text-[#7734eb]"
@@ -83,7 +83,7 @@ const Contact = () => {
         >
           <div>
             <label
-              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              className="text-[16px] font-playwrite font-medium text-[#c7c7c7]"
               htmlFor="name"
             >
               Name
@@ -93,12 +93,12 @@ const Contact = () => {
               id="name"
               name="name"
               placeholder="Your Name"
-              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+              className="w-full px-4 py-3 font-medium font-playwrite text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
             />
           </div>
           <div>
             <label
-              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              className="text-[16px] font-playwrite font-medium text-[#c7c7c7]"
               htmlFor="email"
             >
               Email
@@ -108,12 +108,12 @@ const Contact = () => {
               id="email"
               name="email"
               placeholder="Your Email"
-              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+              className="w-full px-4 py-3 font-medium font-playwrite text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
             />
           </div>
           <div>
             <label
-              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              className="text-[16px] font-playwrite font-medium text-[#c7c7c7]"
               htmlFor="subject"
             >
               Subject
@@ -123,12 +123,12 @@ const Contact = () => {
               id="subject"
               name="subject"
               placeholder="Subject"
-              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+              className="w-full px-4 py-3 font-medium font-playwrite text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
             />
           </div>
           <div>
             <label
-              className="text-[16px] font-amenti font-medium text-[#c7c7c7]"
+              className="text-[16px] font-playwrite font-medium text-[#c7c7c7]"
               htmlFor="msg"
             >
               Message
@@ -137,11 +137,11 @@ const Contact = () => {
               id="msg"
               name="msg"
               placeholder="Your Message"
-              className="w-full px-4 py-3 font-medium font-amenti text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
+              className="w-full px-4 py-3 font-medium font-playwrite text-[#555555] bg-[#f5f5f5] rounded-md focus:outline-none focus:border-[#7734eb]"
             ></textarea>
           </div>
 
-          <button className="font-amenti font-medium bg-white text-black px-6 py-3 rounded-full">
+          <button className="font-playwrite font-medium bg-white text-black px-6 py-3 rounded-full">
             submit
           </button>
         </form>

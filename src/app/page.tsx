@@ -49,7 +49,7 @@ export default function Home() {
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: { value: '#000' },
+        color: { value: '#' },
       },
       fpsLimit: 120,
       interactivity: {

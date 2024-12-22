@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,35 +13,38 @@
 }
 
 @font-face {
-  font-family: "Amenti";
-  src: url("/fonts/Amenti_Regular.otf");
+  font-family: 'Amenti';
+  src: url('/fonts/Amenti_Regular.otf');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Amenti";
-  src: url("/fonts/Amenti_Bold.otf");
+  font-family: 'Amenti';
+  src: url('/fonts/Amenti_Bold.otf');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Amenti";
-  src: url("/fonts/Amenti_Medium.otf");
+  font-family: 'Amenti';
+  src: url('/fonts/Amenti_Medium.otf');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Amenti";
-  src: url("/fonts/Amenti_Light.otf");
+  font-family: 'Amenti';
+  src: url('/fonts/Amenti_Light.otf');
   font-weight: 300;
 }
 
 body {
-  background-color: #0a0a0a;
+  background-color: #050816;
+  /* background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #804dee 0%,
+    rgba(60, 51, 80, 0) 100%
+  ); */
   scroll-behavior: smooth;
-  
-
-
 }
 
 .animated-button {
@@ -58,7 +61,7 @@ body {
 }
 
 .animated-button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
@@ -91,7 +94,7 @@ body {
 }
 
 .reverse-animated-button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -116,6 +119,16 @@ body {
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #804dee 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -137,10 +150,6 @@ body {
   }
 }
 
-
-
-
 #nav a:hover span {
   width: 100%;
 }
-

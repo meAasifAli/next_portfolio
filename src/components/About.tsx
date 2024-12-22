@@ -32,16 +32,14 @@ const About = () => {
           className="flex flex-col  justify-center"
         >
           <div className="w-full relative">
-            <h1 className="text-white text-[43px] sm:text-[76px] text-center  font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
+            <h1 className="text-white text-[43px] sm:text-[57px] text-center  font-medium leading-[90%] mb-8 sm:mb-0 font-amenti">
               About Me
             </h1>
           </div>
           <div className="w-full sm:mt-8">
-            <p className="text-[#C7C7C7] sm:w-2/3 mx-auto text-[16px] leading-6  tracking-widest text-center font-amenti ">
+            <p className="text-[#C7C7C7] sm:w-2/3 mx-auto text-xs  leading-4 tracking-wider text-center font-playwrite">
               I specialize in building dynamic web and mobile applications using
-              the MERN stack and React Native. From intuitive front-end designs
-              to robust back-end solutions, I deliver high-quality, user-centric
-              experiences.
+              the MERN stack and React Native.
             </p>
           </div>
         </motion.div>

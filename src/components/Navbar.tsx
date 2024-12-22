@@ -3,7 +3,9 @@
 import { navLinks } from '@/static/nav'
 import React, { useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi'
+import { FaEye } from 'react-icons/fa'
 import { MdOutlineClose } from 'react-icons/md'
+import * as motion from 'motion/react-client'
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false)
@@ -20,7 +22,7 @@ const Navbar = () => {
             <li
               id="nav"
               key={id}
-              className="relative text-white text-[18px] font-medium leading-6 font-amenti"
+              className="relative text-white text-[18px] font-medium leading-6 font-playwrite"
             >
               <a href={navItem.link} className="relative">
                 {navItem.name}
@@ -31,15 +33,21 @@ const Navbar = () => {
         })}
       </ul>
 
-      <button className="hidden sm:flex border-[1px] border-[#9b42f5] p-3 rounded-lg">
+      <motion.button
+        initial={{ translateY: 0 }}
+        whileHover={{ translateY: -10 }}
+        transition={{ duration: 0.3, ease: 'easeInOut' }}
+        className="hidden sm:flex bg-[#100d25] p-3 rounded-2xl"
+      >
         <a
-          className="text-white"
+          className="text-white flex items-center gap-4 font-playwrite font-normal"
           href="https://drive.google.com/file/d/10dr-uBLLsG7L8gxcFs_OjsZ18PsQmoY8/view?usp=drive_link"
           target="_blank"
         >
-          check Resume
+          Resume
+          <FaEye />
         </a>
-      </button>
+      </motion.button>
 
       <div className="block sm:block md:hidden">
         <div>

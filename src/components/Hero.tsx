@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import * as motion from 'motion/react-client'
+import { CiMail } from 'react-icons/ci'
+import { FaEye } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -32,35 +34,48 @@ const Hero = () => {
               />
             </motion.div>
 
-            <h1 className="text-[57px] text-center tracking-wide my-4 font-bold leading-[100%] text-white uppercase font-amenti">
+            <h1 className="sm:text-[57px] text-[43px]  tracking-wide text-center my-4 font-bold leading-10 text-white uppercase font-amenti">
               Hi, I am Aasif <span className="text-[#9b42f5]">Ali.</span>
             </h1>
-            <p className="text-[18px] text-center  sm:w-1/2 mx-auto font-regular text-[#C7C7C7] leading-[150%] mt-[16px] font-amenti">
-              Web and App Developer crafting seamless digital experiences.
-              Specializing in modern web and mobile technologies to bring
-              innovative ideas to life.
+            <p className="text-[16px] text-center  sm:w-1/2 mx-auto font-regular text-[#C7C7C7] leading-[150%] mt-[16px] font-playwrite">
+              Web and App Developer creating seamless digital solutions. With
+              expertise in modern web and mobile technologies, I transform
+              innovative concepts into reality, delivering user-friendly and
+              impactful experiences.
             </p>
-            <div className="flex justify-center items-center w-full gap-8 mt-[32px]">
-              <Link
-                href={'#contact'}
-                className="bg-[#9b42f5] flex items-center gap-2 p-4 rounded-full hover:scale-105 hover:transition-all delay-75 duration-300 ease-in-out"
+            <div className="flex flex-col sm:flex-row justify-center items-center w-full gap-8 mt-[32px]">
+              <motion.p
+                initial={{ translateY: 0 }}
+                whileHover={{ translateY: -10 }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                className="bg-[#100d25] flex items-center gap-2 p-4 rounded-full "
               >
-                <p className="uppercase text-white  text-[16px] font-regular font-amenti">
+                <a
+                  href="#contact"
+                  className="uppercase text-white  text-[16px] font-regular font-playwrite flex items-center gap-4"
+                >
                   Contact Me
-                </p>
-              </Link>
+                  <CiMail />
+                </a>
+              </motion.p>
 
-              <button className="bg-transparent border-2 border-[#9b42f5] flex items-center gap-2 p-4 rounded-full hover:scale-105 hover:transition-all delay-75 duration-300 ease-in-out hover:bg-[#9b42f5] ">
-                <p className="uppercase text-white text-[16px] font-regular font-amenti">
+              <motion.button
+                initial={{ translateY: 0 }}
+                whileHover={{ translateY: -10 }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                className="bg-transparent border-2 border-[#100d25] flex items-center gap-2 p-4 rounded-full "
+              >
+                <p className="uppercase text-white text-[16px] font-regular font-playwrite">
                   <a
-                    className="text-white"
+                    className="text-white flex items-center gap-4"
                     href="https://drive.google.com/file/d/10dr-uBLLsG7L8gxcFs_OjsZ18PsQmoY8/view?usp=drive_link"
                     target="_blank"
                   >
                     View Resume
+                    <FaEye />
                   </a>
                 </p>
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
