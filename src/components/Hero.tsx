@@ -34,7 +34,7 @@ const Hero = () => {
               />
             </motion.div>
 
-            <h1 className="sm:text-[57px] text-[43px]  tracking-wide text-center my-4 font-bold leading-10 text-white uppercase font-amenti">
+            <h1 className="sm:text-[57px] text-[32px]  tracking-wide text-center my-4 font-bold leading-[60px] text-white uppercase font-amenti">
               Hi, I am Aasif <span className="text-[#9b42f5]">Ali.</span>
             </h1>
             <p className="text-[16px] text-center  sm:w-1/2 mx-auto font-regular text-[#C7C7C7] leading-[150%] mt-[16px] font-playwrite">

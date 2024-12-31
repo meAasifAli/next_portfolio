@@ -28,7 +28,7 @@ const About = () => {
           initial={{ x: '-100%' }}
           whileInView={{ x: '0%' }}
           viewport={{ once: false }}
-          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
           className="flex flex-col  justify-center"
         >
           <div className="w-full relative">

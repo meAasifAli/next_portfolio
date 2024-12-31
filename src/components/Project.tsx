@@ -13,8 +13,12 @@ type project = {
 const Project = ({ project }: project) => {
   return (
     <motion.div
-      initial={{ rotateX: '0deg', rotateY: '0deg', rotateZ: '0deg' }}
-      whileHover={{ rotateX: '5deg', rotateY: '0deg', rotateZ: '5deg' }}
+      initial={{ x: project.id % 2 === 0 ? '100%' : '-100%' }}
+      whileInView={{
+        x: '0%',
+        transition: { duration: 0.5, ease: 'easeInOut' },
+      }}
+      whileHover={{ translateY: -10 }}
       className="flex flex-col lg:flex-row gap-4  items-center justify-between w-full  bg-[#100d25] p-4 rounded-2xl "
     >
       <motion.div initial={{ translateY: 0 }} whileHover={{ translateY: -40 }}>

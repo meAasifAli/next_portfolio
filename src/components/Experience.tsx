@@ -10,7 +10,7 @@ const Experience = () => {
           initial={{ x: '-100%' }} // Start from off-screen to the left
           whileInView={{ x: '0%' }} // Move to the original position
           viewport={{ once: false }}
-          transition={{ duration: 1.25, ease: 'easeInOut', delay: 1 }}
+          transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.5 }}
           className="flex flex-col  justify-center"
         >
           <div className="w-full relative">
